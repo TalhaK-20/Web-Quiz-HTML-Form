@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Form</title>
+
+    <link rel="shortcut icon" href="IMAGES/Company Logo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="Insurance Company Form.css">
+
+</head>
+
+<body>
+
+    <form action="#" method="post">
+
+        <img src="IMAGES/Company Logo.png" alt="Company Logo">
+     
+        <div class="container">
+
+			<h2>Personal Information</h2>
+
+            <label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
+ 
+            <label for="Father's name">Father's name</label>
+			<input type="text" id="Father's name" name="Father's name" required>
+ 
+            <label for="CNIC">CNIC#</label>
+			<input type="text" id="CNIC" name="CNIC" required>
+ 
+            <label for="Father's CNIC">Father's CNIC#</label>
+			<input type="text" id="Father's CNIC" name="Father's CNIC" required>
+ 
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="City">City</label>
+			<input type="text" id="City" name="City" required>
+ 
+            <label for="Current Address">Current Address</label>
+			<input type="text" id="Current Address" name="Current Address" required>
+ 
+            <label for="Permanent Address">Permanent Address</label>
+            <input type="text" id="Permanent Address" name="Permanent Address" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+    
+            <label for="gender">Gender</label>
+            <!-- For drop down menu -->
+            <select id="gender" name="gender" required>
+                <option value="#">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+        </div>
+        
+       
+        <div class="container">
+
+            <h2>Insurance Details</h2>
+            
+            <label for="policy_type">Policy Type</label>
+            <!-- For drop down menu -->
+            <select id="policy_type" name="policy_type" required>
+                <option value="">Select your policy type</option>
+                <option value="home">Home Insurance</option>
+                <option value="car">Car Insurance</option>
+                <option value="life">Life Insurance</option>
+                <option value="health">Health Insurance</option>
+            </select>
+          
+        
+            <!-- Type = Number is used for ^ and \-/ :) -->
+
+            <label for="policy_amount">Policy Amount</label>
+            <input type="number" id="policy_amount" name="policy_amount" min="1000" max="100000" required>
+          
+            <label for="policy_duration">Policy Duration (in years)</label>
+            <input type="number" id="policy_duration" name="policy_duration" min="1" max="20" required>
+          
+            <label for="beneficiary_name">Beneficiary Name</label>
+            <input type="text" id="beneficiary_name" name="beneficiary_name" required>
+      
+            <label for="nominee_name">Nominee Name</label>
+            <input type="text" id="nominee_name" name="nominee_name" required>
+      
+            <label for="nominee_relation">Nominee Relation</label>
+            <input type="text" id="nominee_relation" name="nominee_relation" required>
+      
+        </div>
+        
+        
+        <div class="container">
+
+            <h2>Additional Information</h2>
+      
+            <label for="occupation">Occupation</label>
+            <input type="text" id="occupation" name="occupation" required>
+      
+            <label for="annual_income">Annual Income</label>
+            <input type="number" id="annual_income" name="annual_income" min="10000" max="1000000" required>
+      
+            
+            <label for="smoker">Do you smoke?</label>
+            <!-- Name is important, if we don't apply name then both radio options can be selected -->
+            <!-- Value is important as it will be sent to server database when click on the submit -->
+        
+            <label><input type="radio" name="smoker" value="yes" required>Yes</label>
+            <label><input type="radio" name="smoker" value="no" required>No</label>
+     
+            <label for="medical_history">Medical History</label>
+            <textarea id="medical_history" name="medical_history" rows="5" required></textarea>
+      
+        </div>
+        
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>	
+
+  
